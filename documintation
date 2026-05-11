@@ -1,0 +1,34 @@
+Pattern Structure
+
+The system applies the Composite Pattern using:
+
+ProductComponent as the common interface
+Product as the leaf object
+Category as the composite object
+
+This structure allows the system to treat individual products and groups of products uniformly.
+
+Class Responsibilities
+ProductComponent
+
+Defines common operations for all products and categories.
+
+Product
+
+Represents a single product in the system.
+
+Category
+
+Represents a group that may contain:
+
+Products
+Subcategories
+
+It supports recursive operations for displaying products and calculating total prices.
+
+Pattern Behavior
+
+The client interacts only with the ProductComponent interface.
+This reduces dependency on concrete classes and supports loose coupling.
+
+The Category object recursively manages child components, which enables flexible hierarchical structures.
